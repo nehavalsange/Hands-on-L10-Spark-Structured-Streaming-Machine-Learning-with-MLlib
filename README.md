@@ -82,28 +82,7 @@ Transform streaming data into features.
 Predict fare and calculate deviation.
 Output results to console in append mode.
 
---- 
-
-## Task 5
-
-Load training data and cast timestamp.
-Aggregate historical data into 5-minute windows to compute avg_fare.
-
-Create time-based features:
-hour_of_day
-minute_of_hour
-
-Train LinearRegression on these features.
-Save the model to models/fare_trend_model_v2.
-Stream live rides and aggregate into sliding 5-minute windows.
-Transform into features and predict average fare for each window.
-Output results to console in append mode.
-
---- 
-
-## **Outputs**
-
-**Task 4**
+**Task 4 output**
 ```
 -------------------------------------------
 Batch: 1
@@ -125,7 +104,23 @@ Batch: 2
 
 ```
 
-**Task 5**
+
+## Task 5
+
+Load training data and cast timestamp.
+Aggregate historical data into 5-minute windows to compute avg_fare.
+
+Create time-based features:
+hour_of_day
+minute_of_hour
+
+Train LinearRegression on these features.
+Save the model to models/fare_trend_model_v2.
+Stream live rides and aggregate into sliding 5-minute windows.
+Transform into features and predict average fare for each window.
+Output results to console in append mode.
+
+**Task 5 output**
 
 ```
 -------------------------------------------
